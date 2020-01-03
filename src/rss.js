@@ -71,7 +71,7 @@ module.exports = {
         obj.url = obj.link = !util.isNullOrUndefined(val.link) ? val.link[0] : '';
 
         if (val["image"]) {
-          obj.image = val["image"];
+          obj.image = val["image"][0];
         }
 
         // Medium Support via @sstrubberg
