@@ -75,7 +75,7 @@ module.exports = {
           obj.image = val["image"][0];
         }
         if (val["tags"]) {
-          obj.tags = val["tags"];
+          obj.tags = val["tags"] && val["tags"].split(",").map(tag => tag.trim());
         }
 
         // Medium Support via @sstrubberg
