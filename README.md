@@ -4,19 +4,22 @@ Util for parse ATOM and RSS feed resources and normalize them to JSON object.
 
 [MEAN vs. MERN vs. MEVN - What’s the Difference](https://morioh.com/p/e010d0aaf16e)
 
-[How to Creat a Task Management App Using Vue.js and a Node.js](https://morioh.com/p/1c085eda13b5)
+[How to Create a Task Management App Using Vue.js and a Node.js](https://morioh.com/p/1c085eda13b5)
+
+# This package is forked [from](https://github.com/nasa8x/rss-to-json)
+Credits goes to the [author](https://github.com/nasa8x)
 
 ## Install
 
 ```js
-npm install rss-to-json --save
+npm install rss-to-json-v2 --save
 ```
 
 ## Example
 
 ```js
 
-var Feed = require('rss-to-json');
+var Feed = require('rss-to-json-v2');
 
 Feed.load('https://learnstartup.net/feed/', function(err, rss){
     console.log(rss);
