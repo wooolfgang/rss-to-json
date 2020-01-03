@@ -70,6 +70,10 @@ module.exports = {
         obj.description = !util.isNullOrUndefined(val.description) ? val.description[0] : '';
         obj.url = obj.link = !util.isNullOrUndefined(val.link) ? val.link[0] : '';
 
+        if (val["image"]) {
+          obj.image = val["image"];
+        }
+
         // Medium Support via @sstrubberg
         if (val["guid"]) {
           obj.guid = val["guid"][0];
