@@ -70,8 +70,12 @@ module.exports = {
         obj.description = !util.isNullOrUndefined(val.description) ? val.description[0] : '';
         obj.url = obj.link = !util.isNullOrUndefined(val.link) ? val.link[0] : '';
 
+        // Remoteok Support
         if (val["image"]) {
           obj.image = val["image"][0];
+        }
+        if (val["tags"]) {
+          obj.tags = val["tags"];
         }
 
         // Medium Support via @sstrubberg
