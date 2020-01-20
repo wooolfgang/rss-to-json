@@ -83,7 +83,11 @@ module.exports = {
           obj.guid = val["guid"][0];
         }
         if (val["category"]) {
-          obj.category = val["category"][0];
+          if (val["category"].length > 1) {
+            obj.categories = val["category"];
+          } else {
+            obj.category = val["category"][0];
+          }
         }
         if (val["dc:creator"]) {
           obj.dc_creator = val["dc:creator"][0];
